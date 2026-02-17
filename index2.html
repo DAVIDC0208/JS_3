@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba 1</title>
+    <style>
+      .borde-verde {
+        border: 1px solid green;
+      }
+      .borde-rojo {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Edad:</p>
+    </div>
+    <input type="number" id="edad" min="0" placeholder="Pon aqui tu edad" />
+    <button type="submit" id="boton" name="Edad">Entrar</button>
+    <div id="div"></div>
+    <script>
+      console.log("Hola prueba 1!");
+      let input = document.querySelector("#edad");
+      let div = document.querySelector("#div");
+      let boton = document.querySelector("#boton");
+      function escribir() {
+        if (input.value >= 18) {
+          div.classList.add("borde-verde");
+          div.classList.remove("borde-rojo");
+        } else {
+          div.classList.add("borde-rojo");
+          div.classList.remove("borde-verde");
+        }
+        div.innerHTML = input.value;
+      }
+      boton.addEventListener("click", escribir);
+      //   1. Seleccionar input 2. Seleccionar boton 3. Console input boton 4. Añadir evento 5. crear funcion 6. console log ("dentro funciones") 7. leemos el value del input y lo ponemos en edad 8. miramos si es >18 9.si console log (si) 10. no console log (no) 11.
+    </script>
+  </body>
+</html>

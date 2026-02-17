@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coches</title>
+    <style>
+      .mercedes {
+      }
+      .audi {
+      }
+      .bmw {
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Coches</h1>
+    <input type="select" id="seleccion" placeholder="Selecciona un coche" />
+    <button type="submit" id="boton" name="modelo">Entrar</button>
+    <div id="div"></div>
+    <script>
+      console.log(
+        "Selecciona entre audi, mercedes o bmw y obten una imagen de ellos.",
+      );
+      let input = document.querySelector("#selecion");
+      let div = document.querySelector("#div");
+      let button = document.querySelector("#boton");
+      function seleccionar() {
+        if ((input.value = mercedes)) {
+          div.classList.add("mercedes");
+          div.classList.remove("audi");
+          div.classList.remove("bmw");
+        } else {
+            
+        }
+      }
+    </script>
+  </body>
+</html>
